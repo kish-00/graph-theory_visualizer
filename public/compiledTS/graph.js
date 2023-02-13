@@ -96,6 +96,8 @@ var Graph = /** @class */ (function () {
         }
         b1.weight = weight;
     };
+
+    //Breadth first Search
     Graph.prototype.BFS = function (start) {
         var e_1, _a;
         var t = new Array();
@@ -126,6 +128,7 @@ var Graph = /** @class */ (function () {
         }
         return t;
     };
+    //Depth First Search
     Graph.prototype.DFS = function (start) {
         var ret = new Array();
         var visited = new Set();
@@ -187,6 +190,7 @@ var Graph = /** @class */ (function () {
         }
         return ret;
     };
+    //Kruskal algorithm
     Graph.prototype.kruskal = function () {
         var e_4, _a;
         var ret = new Array();
@@ -211,6 +215,7 @@ var Graph = /** @class */ (function () {
         }
         return ret;
     };
+    //Dijkstras algorithm 
     Graph.prototype.dijkstra = function (start, end) {
         var e_5, _a, e_6, _b;
         var dist = new Map();
